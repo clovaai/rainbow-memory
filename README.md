@@ -1,14 +1,14 @@
+## Rainbow Memory - Official PyTorch Implementation
+
+![overview](./overview.png | width=100)
+
+**Rainbow Memory: Continual Learning with a Memory of Diverse Samples**<br>
+[Paper](https://arxiv.org/pdf/2103.17230.pdf) | [Bibtex](#Citation)<br>
+**Jihwan Bang<sup>\*</sup>, Heesu Kim<sup>\*</sup>, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi** <br>
+CVPR 2021<br>
+(\* indicates equal contribution)
+
 #### (NOTICE) The code will be pushed to this repository soon.  
-## Rainbow Memory: Continual Learning with a Memory of Diverse Samples
-Official PyTorch Implementation of Rainbow Memory | [Paper](https://arxiv.org/pdf/2103.17230.pdf) | [Bibtex](#Citation) 
-
-**Jihwan Bang<sup>\*</sup>, Heesu Kim<sup>\*</sup>, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi**
-
-\* indicates equal contribution.
-
-In CVPR 2021.
-
-![overview](./overview.png)
 
 ## Abstract
 Continual learning is a realistic learning scenario for AI models. 
