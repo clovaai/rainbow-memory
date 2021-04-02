@@ -4,7 +4,7 @@ This repository contains code for the paper:
 **Rainbow Memory: Continual Learning with a Memory of Diverse Samples,
 CVPR 2021**
 
-Jihwan Bang, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi
+Jihwan Bang, Heesu Kim, YoungJoon Yoo, [Jung-Woo Ha](https://github.com/jungwoo-ha), Jonghyun Choi
 
 [[arxiv]](https://arxiv.org/pdf/2103.17230.pdf)
 
