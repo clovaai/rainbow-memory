@@ -1,6 +1,6 @@
 ## Rainbow Memory - Official PyTorch Implementation
 
-![overview](./overview.png | width=100)
+<img src="./overview.png" width="450">
 
 **Rainbow Memory: Continual Learning with a Memory of Diverse Samples**<br>
 [Paper](https://arxiv.org/pdf/2103.17230.pdf) | [Bibtex](#Citation)<br>
