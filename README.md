@@ -13,6 +13,16 @@ Jihwan Bang, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi
 
 The code will be pushed to this repository soon.  
 
+## Citation 
+```angular2
+@inproceedings{jihwan2021rainbow,
+  title={Rainbow Memory: Continual Learning with a Memory of Diverse Samples},
+  author={Jihwan Bang, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi},
+  booktitle={CVPR},
+  month={June},
+  year={2021}
+}
+```
 
 ## License
 
