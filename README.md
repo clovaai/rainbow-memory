@@ -8,7 +8,7 @@
 CVPR 2021<br>
 (\* indicates equal contribution)
 
-#### (NOTICE) The code will be pushed to this repository soon.  
+**NOTE: The code will be pushed to this repository soon.**
 
 ## Abstract
 Continual learning is a realistic learning scenario for AI models. 
