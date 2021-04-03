@@ -3,9 +3,9 @@
 <img src="./overview.png" width="450">
 
 **Rainbow Memory: Continual Learning with a Memory of Diverse Samples**<br>
-[Paper](https://arxiv.org/pdf/2103.17230.pdf) | [Bibtex](#Citation)<br>
-**Jihwan Bang<sup>\*</sup>, Heesu Kim<sup>\*</sup>, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi** <br>
+Jihwan Bang<sup>\*</sup>, Heesu Kim<sup>\*</sup>, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi<br>
 CVPR 2021<br>
+[Paper](https://arxiv.org/pdf/2103.17230.pdf) | [Bibtex](#Citation)<br>
 (\* indicates equal contribution)
 
 **NOTE: The code will be pushed to this repository soon.**
