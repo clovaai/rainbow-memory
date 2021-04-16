@@ -34,7 +34,8 @@ If you want to see more details, see the [paper](https://arxiv.org/pdf/2103.1723
 | **RM**        | 91.80±0.69 | **41.35±0.95** | **50.11**    |
 
 ## Updates
-April 2nd, 2021: Initial upload only README
+- April 2nd, 2021: Initial upload only README
+- April 16th, 2021: Upload all the codes for experiments 
 
 ## Getting Started
 ### Requirements 
