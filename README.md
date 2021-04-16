@@ -37,7 +37,87 @@ If you want to see more details, see the [paper](https://arxiv.org/pdf/2103.1723
 April 2nd, 2021: Initial upload only README
 
 ## Getting Started
-TBD.
+### Requirements 
+
+- Python3
+- Pytorch (>1.0)
+- torchvision (>0.2)
+- numpy
+- pillow~=6.2.1
+- torch_optimizer
+- randaugment
+- easydict
+- pandas~=1.1.3
+
+### Datasets
+All the datasets are saved in `dataset` directory by following formats as shown below.
+
+```angular2html
+[dataset name] 
+    |_train
+        |_[class1 name]
+            |_00001.png
+            |_00002.png 
+            ...
+        |_[class2 name]
+            ... 
+    |_test (val for ImageNet)
+        |_[class1 name]
+            |_00001.png
+            |_00002.png
+            ...
+        |_[class2 name]
+            ...
+```
+You can easily download the dataset following above format.
+
+- MNIST: https://github.com/hwany-j/mnist_png
+- CIFAR-10: https://github.com/hwany-j/cifar10_png
+- CIFAR-100: https://github.com/hwany-j/cifar100_png
+
+For ImageNet, you should download the public site.
+
+- train: http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_train.tar
+- validation: http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_val.tar
+
+### Usage 
+To run the experiments in the paper, you just run `experiment.sh`.
+```angular2html
+bash experiment.sh 
+```
+For various experiments, you should know the role of each argument. 
+
+- `MODE`: CIL methods. Our method is called `rm`. [joint, gdumb, icarl, rm, ewc, rwalk, bic]
+  (`joint` calculates accuracy when training all the datasets at once.)
+- `MEM_MANAGE`: Memory management method. `default` uses the memory method which the paper originally used.
+  [default, random, reservoir, uncertainty, prototype].
+- `RND_SEED`: Random Seed Number 
+- `DATASET`: Dataset name [mnist, cifar10, cifar100, imagenet]
+- `STREAM`: The setting whether current task data can be seen iteratively or not. [online, offline] 
+- `EXP`: Task setup [disjoint, blurry10, blurry30]
+- `MEM_SIZE`: Memory size cifar10: k={200, 500, 1000}, mnist: k=500, cifar100: k=2,000, imagenet: k=20,000
+- `TRANS`: Augmentation. Multiple choices [cutmix, cutout, randaug, autoaug]
+
+### Results
+There are three types of logs during running experiments; logs, results, tensorboard. 
+The log files are saved in `logs` directory, and the results which contains accuracy of each task 
+are saved in `results` directory. 
+```angular2html
+root_directory
+    |_ logs 
+        |_ [dataset]
+            |_{mode}_{mem_manage}_{stream}_msz{k}_rnd{seed_num}_{trans}.log
+            |_ ...
+    |_ results
+        |_ [dataset]
+            |_{mode}_{mem_manage}_{stream}_msz{k}_rnd{seed_num}_{trans}.npy
+            |_...
+```
+
+In addition, you can also use the `tensorboard` as following command.
+```angular2html
+tensorboard --logdir tensorboard
+```
 
 ## Citation 
 ```angular2
@@ -53,24 +133,18 @@ TBD.
 ## License
 
 ```
-Copyright (c) 2019-present NAVER Corp.
+Copyright 2021-present NAVER Corp.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
-
