@@ -5,7 +5,8 @@
 **Rainbow Memory: Continual Learning with a Memory of Diverse Samples**<br>
 Jihwan Bang<sup>\*</sup>, Heesu Kim<sup>\*</sup>, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi<br>
 CVPR 2021<br>
-[Paper](https://arxiv.org/pdf/2103.17230.pdf) | [Bibtex](#Citation)<br>
+[Paper](https://arxiv.org/pdf/2103.17230.pdf) | [Supp](https://openaccess.thecvf.com/content/CVPR2021/supplemental/Bang_Rainbow_Memory_Continual_CVPR_2021_supplemental.pdf) | 
+[Slide](https://www.slideshare.net/JihwanBang/cvpr2021-rainbow-memory-continual-learning-with-a-memory-of-diverse-samples) | [Video](https://www.youtube.com/watch?v=65vxyCKQip4&ab_channel=JihwanBang) | [Bibtex](#Citation)<br>
 (\* indicates equal contribution)
 
 **NOTE: The code will be pushed to this repository soon.**
@@ -122,12 +123,13 @@ tensorboard --logdir tensorboard
 
 ## Citation 
 ```angular2
-@inproceedings{jihwan2021rainbow,
-  title={Rainbow Memory: Continual Learning with a Memory of Diverse Samples},
-  author={Jihwan Bang, Heesu Kim, YoungJoon Yoo, Jung-Woo Ha, Jonghyun Choi},
-  booktitle={CVPR},
-  month={June},
-  year={2021}
+@InProceedings{Bang_2021_CVPR,
+    author    = {Bang, Jihwan and Kim, Heesu and Yoo, YoungJoon and Ha, Jung-Woo and Choi, Jonghyun},
+    title     = {Rainbow Memory: Continual Learning With a Memory of Diverse Samples},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {8218-8227}
 }
 ```
 
