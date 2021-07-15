@@ -9,8 +9,6 @@ CVPR 2021<br>
 [Slide](https://www.slideshare.net/JihwanBang/cvpr2021-rainbow-memory-continual-learning-with-a-memory-of-diverse-samples) | [Video](https://www.youtube.com/watch?v=65vxyCKQip4&ab_channel=JihwanBang) | [Bibtex](#Citation)<br>
 (\* indicates equal contribution)
 
-**NOTE: The code will be pushed to this repository soon.**
-
 ## Abstract
 Continual learning is a realistic learning scenario for AI models. 
 Prevalent scenario of continual learning, however, assumes disjoint sets of classes as tasks and is less realistic rather artificial. 
