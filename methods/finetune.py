@@ -1,3 +1,8 @@
+"""
+rainbow-memory
+Copyright 2021-present NAVER Corp.
+GPLv3
+"""
 # When we make a new one, we should inherit the Finetune class.
 import logging
 import os

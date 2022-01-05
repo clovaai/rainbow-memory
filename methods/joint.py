@@ -1,3 +1,8 @@
+"""
+rainbow-memory
+Copyright 2021-present NAVER Corp.
+GPLv3
+"""
 from methods.finetune import Finetune
 from utils.train_utils import select_model, select_optimizer
 

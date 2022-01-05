@@ -1,3 +1,8 @@
+"""
+rainbow-memory
+Copyright 2021-present NAVER Corp.
+GPLv3
+"""
 import logging
 
 from methods.bic import BiasCorrection

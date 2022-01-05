@@ -1,3 +1,8 @@
+"""
+rainbow-memory
+Copyright 2021-present NAVER Corp.
+GPLv3
+"""
 import torch_optimizer
 from easydict import EasyDict as edict
 from torch import optim
