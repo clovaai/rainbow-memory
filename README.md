@@ -35,6 +35,7 @@ If you want to see more details, see the [paper](https://arxiv.org/pdf/2103.1723
 ## Updates
 - April 2nd, 2021: Initial upload only README
 - April 16th, 2021: Upload all the codes for experiments 
+- Jan 18th, 2022: Upload the notebooks to make blurry or disjoint dataset
 
 ## Getting Started
 ### Requirements 
@@ -79,6 +80,8 @@ For ImageNet, you should download the public site.
 
 - train: http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_train.tar
 - validation: http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_val.tar
+
+If you have custom datasets, you can make disjoint or blurry datasets of each task using `make_dataset_per_task.ipynb`. 
 
 ### Usage 
 To run the experiments in the paper, you just run `experiment.sh`.
